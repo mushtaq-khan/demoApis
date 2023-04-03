@@ -9,7 +9,12 @@ const port = 80;
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb+srv://mongodb:passpass@cluster0.bd9ne7k.mongodb.net/myDatabase', {
+// mongoose.connect('mongodb+srv://mongodb:passpass@cluster0.bd9ne7k.mongodb.net/myDatabase', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+
+mongoose.connect('mongodb://localhost:27017/myDatabase', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
