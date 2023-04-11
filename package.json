@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node src/app.js",
     "pack": "npm pack",
-    "deploy":"scp -i /var/lib/jenkins/rsa_key.pem $(npm run pack -- --output /var/lib/jenkins/workspace/demo_pipeline) ubuntu@ec2-3-1-202-120.ap-southeast-1.compute.amazonaws.com:~/"
+    "deploy":"scp -i /var/lib/jenkins/rsa_key.pem $(npm run pack -- --output /var/lib/jenkins/workspace/demo_pipeline/demo-1.0.0.tgz) ubuntu@ec2-3-1-202-120.ap-southeast-1.compute.amazonaws.com:~/"
   },
   "author": "",
   "license": "ISC",
